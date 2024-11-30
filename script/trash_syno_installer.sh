@@ -644,7 +644,7 @@ EOF
 fi
 
 printf '\n%b\n' " ${ulmc} Downloading docker .env"
-if wget -qO "${docker_conf_dir}/appdata/.env" https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env; then
+if wget -qO "${docker_conf_dir}/appdata/.env" https://raw.githubusercontent.com/yakau/Synology-Templates/refs/heads/main/docker-compose/.env; then
     printf '\n%b\n' " ${utick} Docker .env downloaded."
 else
     printf '\n%b\n' " ${ucross} There was a problem downloading then .env, try again"
